@@ -30,7 +30,7 @@ https://<your bot server domain>:443/callback/
 
 * LINE BOTのChannelID、ChannelSecret、MIDを実際の値に書き換える(server.py L26付近)
 * Toronado内でSSL証明書の読み込みを辺りで行っている(server.py L245付近)。  
-実物のSSL証明書をconfig配下に設置する。
+実物のSSL証明書をconfig配下に設置する。(今回はStartSSLを使用した)
 
 ## 使い方
 ### 起動と停止
