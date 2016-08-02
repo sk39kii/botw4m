@@ -127,9 +127,9 @@ class SendingEventObject(object):
         counter = 0
         try:
             # テーブルは事前に作成しておく
-            # if not db.checkDuplicate("CountGameRoomTbl"):
-            #     # Table Create
-            #     self.execQuery_CountGameRoomTbl('create', None)
+            if not db.checkDuplicate("CountGameRoomTbl"):
+                # Table Create
+                self.execQuery_CountGameRoomTbl('create', None)
 
             result = self.execQuery_CountGameRoomTbl(
                 'select', {"player": reo_content._from}
