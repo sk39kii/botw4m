@@ -50,7 +50,7 @@ Ctrl + c
 nohup ./start.sh > 標準出力ログ 2> エラーログ < /dev/null &
 
 例：
-nohup ./Start.sh > log/out.log 2> log/err.log < /dev/null &
+nohup ./start.sh > log/out.log 2> log/err.log < /dev/null &
 ```
 
 停止はプロセルをkillする
